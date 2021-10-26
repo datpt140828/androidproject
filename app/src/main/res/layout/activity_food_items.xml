@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:id="@+id/restaurantmenuimg"
+                android:src="@drawable/ic_launcher_background"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:background="#8000"
+                    />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="125dp"
+                android:id="@+id/restaurantlogo"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_toRightOf="@id/restaurantlogo"
+                android:text="Restaurant Name"
+                android:textSize="20dp"
+                android:id="@+id/restaurantname"
+                android:layout_marginTop="120dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/restaurantlogo"
+                android:textColor="#fff"
+                android:text="Restaurant Location"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_below="@id/restaurantname"
+                android:paddingLeft="20dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/restaurantlogo"
+                android:textColor="#fff"
+                android:text="Restaurant Location"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_below="@id/restaurantname"
+                android:paddingLeft="20dp"
+
+                />
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/restaurantmenuimg"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/commentsview"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false" />
+
+            </RelativeLayout>
+<!--      <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--          android:id="@+id/fab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentEnd="true"-->
+<!--          android:src="@drawable/comment_icon_2"-->
+<!--            android:layout_margin="@dimen/fab_margin"-->
+<!--          />-->
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/writecomment"
+        android:src="@android:color/background_dark"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        />
+        </RelativeLayout>
+
+
+
+

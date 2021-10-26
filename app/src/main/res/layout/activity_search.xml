@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:id="@+id/searchimg"
+        android:src="@drawable/ic_launcher_background"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:background="#8000"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="125dp"
+        android:id="@+id/restaurantlogo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_toRightOf="@id/restaurantlogo"
+        android:text="Local Liquors"
+        android:textSize="20dp"
+        android:id="@+id/localliquor"
+        android:layout_marginTop="150dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/liquorRec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
